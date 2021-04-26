@@ -35,7 +35,7 @@ export const shimPlugin = {
         if (options.finish) {
           logger.info("monkeypatching {blue:finish}")
           const finish = Eleventy.prototype.finish
-          Eleventy.prototype.serve = function() {
+          Eleventy.prototype.finish = function() {
             logger.info("running {blue:finish}")
             options.finish.call(undefined, this)
             finish.call(this)

@@ -1,7 +1,7 @@
 {
   "name": "@hendotcat/11tyshim",
   "description": "Monkeypatch plugin for Eleventy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": {
     "name": "Henry Catalini Smith",
@@ -18,8 +18,11 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@types/jest": "^26.0.23",
     "@types/node": "^14.14.41",
     "@types/shimmer": "^1.0.1",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.5",
     "typescript": "^4.2.4"
   },
   "peerDependencies": {
@@ -27,11 +30,16 @@
   },
   "scripts": {
     "build": "tsc",
+    "test": "jest",
     "watch": "tsc --watch"
   },
   "files": [
     "index.d.ts",
     "index.js"
   ],
-  "types": "index.d.ts"
+  "types": "index.d.ts",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
 }
