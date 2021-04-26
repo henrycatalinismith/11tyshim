@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "jest --detectOpenHandles",
+    "test": "jest",
     "watch": "tsc --watch"
   },
   "files": [
