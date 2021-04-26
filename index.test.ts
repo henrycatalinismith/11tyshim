@@ -2,15 +2,8 @@ import { spawn } from "child_process"
 import { name, version } from "./package.json"
 
 describe(`${name}@${version}`, () => {
-  let child
-
-  afterEach(done => {
-    child.kill()
-    done()
-  })
-
   test("finish", (done) => {
-    child = spawn("yarn", [
+    const child = spawn("yarn", [
       "eleventy",
       "--config=test.eleventy.js",
     ])
@@ -31,7 +24,7 @@ describe(`${name}@${version}`, () => {
   })
 
   test("serve", (done) => {
-    child = spawn("yarn", [
+    const child = spawn("yarn", [
       "eleventy",
       "--config=test.eleventy.js",
       "--serve",
