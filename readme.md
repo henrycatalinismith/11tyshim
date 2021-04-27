@@ -50,6 +50,26 @@ module.exports = function(eleventyConfig) {
 
 ## Options
 
+### `write`
+
+Pass a `write` function to the plugin and it'll run at the start of an Eleventy
+build. This function runs for both one-off Eleventy builds and the `--serve` dev
+server.
+
+It receives the `eleventyInstance` as an argument.
+
+```javascript
+const { shimPlugin } = require("@hendotcat/11tyshim")
+
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(shimPlugin, {
+    write: (eleventyInstance) => {
+      console.log("11ty build starting!")
+    },
+  })
+}
+```
+
 ### `finish`
 
 Pass a `finish` function to the plugin and it'll run just before an Eleventy
@@ -92,8 +112,10 @@ module.exports = function(eleventyConfig) {
     serve: (eleventyInstance) => {
       console.log("11ty dev server started!")
       chokidar.watch("style.scss").on("all", (event, path) => {
+        const { css } = sass.renderSync({ file: "style.scss" })
         fs.writeFileSync(
-          sass.renderSync({ file: "style.scss" }).css
+          `${eleventyInstance.outputDir}/style.css`,
+          css
         )
         eleventyInstance.eleventyServe.reload()
       })

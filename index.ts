@@ -9,6 +9,7 @@ interface EleventyConfig {
 }
 
 interface Options {
+  write?: (eleventyInstance: any) => void
   finish?: (eleventyInstance: any) => void
   serve?: (eleventyInstance: any) => void
   verbose?: boolean
@@ -31,6 +32,16 @@ export const shimPlugin = {
           process.cwd()
           + '/node_modules/@11ty/eleventy/src/Eleventy.js'
         )
+
+        if (options.write) {
+          logger.info("monkeypatching {blue:write}")
+          const write = Eleventy.prototype.write
+          Eleventy.prototype.write = function() {
+            logger.info("running {blue:write}")
+            options.write.call(undefined, this)
+            write.call(this)
+          }
+        }
 
         if (options.finish) {
           logger.info("monkeypatching {blue:finish}")
