@@ -1,7 +1,7 @@
 {
   "name": "@hendotcat/11tyshim",
   "description": "Monkeypatch plugin for Eleventy",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Henry Catalini Smith",
@@ -32,12 +32,9 @@
     "watch": "tsc --watch"
   },
   "files": [
-    "index.d.ts",
-    "index.js"
+    "11tyshim.d.ts",
+    "11tyshim.js"
   ],
-  "types": "index.d.ts",
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "node"
-  }
+  "main": "11tyshim.js",
+  "types": "11tyshim.d.ts"
 }

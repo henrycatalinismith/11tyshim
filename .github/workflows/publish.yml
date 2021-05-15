@@ -16,8 +16,8 @@ jobs:
       - run: yarn
 
       - run: yarn build
-
-      #- run: yarn test
+        
+      - run: make test
 
       - uses: JS-DevTools/npm-publish@v1
         with:

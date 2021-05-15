@@ -132,13 +132,13 @@ enable this this option if you're reporting a bug in `11tyshim`.
 
 ## Contributing
 
-<p>
-  <a href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/">
-    Contributor Covenant v2.0
- </a>
-</p>
+* [Tips][Contributing]
+* [Code of Conduct]
 
 ## License
 
-MIT
+[MIT]
 
+[Contributing]: https://github.com/hendotcat/11tyshim/blob/trunk/contributing.md
+[Code of Conduct]: https://github.com/hendotcat/11tyshim/blob/trunk/code_of_conduct.md
+[MIT]: https://github.com/hendotcat/11tyshim/blob/trunk/license

@@ -1,6 +1,5 @@
 .DS_Store
-index.d.ts
-index.js
+11tyshim.d.ts
+11tyshim.js
 node_modules
 yarn-error.log
-_site
