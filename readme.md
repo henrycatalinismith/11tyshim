@@ -27,13 +27,13 @@ everyone else is using? This is the plugin you're looking for!
 ## Installation
 
 ```
-yarn add -D @hendotcat/11tyshim
+yarn add -D @henrycatalinismith/11tyshim
 ```
 
 ## Usage
 
 ```javascript
-const { shimPlugin } = require("@hendotcat/11tyshim")
+const { shimPlugin } = require("@henrycatalinismith/11tyshim")
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(shimPlugin, {
@@ -59,7 +59,7 @@ server.
 It receives the `eleventyInstance` as an argument.
 
 ```javascript
-const { shimPlugin } = require("@hendotcat/11tyshim")
+const { shimPlugin } = require("@henrycatalinismith/11tyshim")
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(shimPlugin, {
@@ -79,7 +79,7 @@ not in the dev server.
 It receives the `eleventyInstance` as an argument.
 
 ```javascript
-const { shimPlugin } = require("@hendotcat/11tyshim")
+const { shimPlugin } = require("@henrycatalinismith/11tyshim")
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(shimPlugin, {
@@ -102,7 +102,7 @@ reload the Eleventy server.
 It receives the `eleventyInstance` as an argument.
 
 ```javascript
-const { shimPlugin } = require("@hendotcat/11tyshim")
+const { shimPlugin } = require("@henrycatalinismith/11tyshim")
 const chokidar = require("chokidar")
 const fs = require("fs")
 const sass = require("sass")
