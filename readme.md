@@ -1,7 +1,7 @@
 <p align="center">
   <img
     alt="11tyshim"
-    src="https://github.com/hendotcat/11tyshim/raw/trunk/11tyshim.svg"
+    src="https://github.com/henrycatalinismith/11tyshim/raw/trunk/11tyshim.svg"
     height="64"
   />
 </p>
@@ -14,7 +14,7 @@
 
 <p align="center">
   <img
-    src="https://github.com/hendotcat/11tyshim/actions/workflows/publish.yml/badge.svg"
+    src="https://github.com/henrycatalinismith/11tyshim/actions/workflows/publish.yml/badge.svg"
     alt="Build status"
   />
 </p>
@@ -139,6 +139,6 @@ enable this this option if you're reporting a bug in `11tyshim`.
 
 [MIT]
 
-[Contributing]: https://github.com/hendotcat/11tyshim/blob/trunk/contributing.md
-[Code of Conduct]: https://github.com/hendotcat/11tyshim/blob/trunk/code_of_conduct.md
-[MIT]: https://github.com/hendotcat/11tyshim/blob/trunk/license
+[Contributing]: https://github.com/henrycatalinismith/11tyshim/blob/trunk/contributing.md
+[Code of Conduct]: https://github.com/henrycatalinismith/11tyshim/blob/trunk/code_of_conduct.md
+[MIT]: https://github.com/henrycatalinismith/11tyshim/blob/trunk/license
