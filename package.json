@@ -1,7 +1,7 @@
 {
   "name": "@henrycatalinismith/11tyshim",
   "description": "Monkeypatch plugin for Eleventy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": {
     "name": "Henry Catalini Smith",
