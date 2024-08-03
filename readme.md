@@ -1,7 +1,7 @@
 <p align="center">
   <img
     alt="11tyshim"
-    src="https://github.com/henrycatalinismith/11tyshim/raw/trunk/11tyshim.svg"
+    src="https://github.com/henrycatalinismith/11tyshim/raw/main/11tyshim.svg"
     height="64"
   />
 </p>
@@ -18,6 +18,12 @@
     alt="Build status"
   />
 </p>
+
+> [!NOTE]
+> In version 1.0.0 of Eleventy, an event listener API was added to eleventyConfig.
+> You're better off using that API rather than this plugin.
+>
+> https://www.11ty.dev/docs/events/
 
 Need to monkeypatch Eleventy to listen to lifecycle events for your plugin?
 Need access to `eleventyInstance` so you can read config variables or reload
