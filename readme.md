@@ -1,23 +1,6 @@
-<p align="center">
-  <img
-    alt="11tyshim"
-    src="https://github.com/henrycatalinismith/11tyshim/raw/main/11tyshim.svg"
-    height="64"
-  />
-</p>
+# 11tyshim
 
-<p align="center">
-  <strong>
-    Eleventy monkeypatch plugin
-  </strong>
-</p>
-
-<p align="center">
-  <img
-    src="https://github.com/henrycatalinismith/11tyshim/actions/workflows/publish.yml/badge.svg"
-    alt="Build status"
-  />
-</p>
+Eleventy monkeypatch plugin
 
 > [!NOTE]
 > In version 1.0.0 of Eleventy, an event listener API was added to eleventyConfig.
@@ -145,6 +128,6 @@ enable this this option if you're reporting a bug in `11tyshim`.
 
 [MIT]
 
-[Contributing]: https://github.com/henrycatalinismith/11tyshim/blob/trunk/contributing.md
-[Code of Conduct]: https://github.com/henrycatalinismith/11tyshim/blob/trunk/code_of_conduct.md
-[MIT]: https://github.com/henrycatalinismith/11tyshim/blob/trunk/license
+[Contributing]: https://codeberg.org/henrycatalinismith/11tyshim/src/branch/main/contributing.md
+[Code of Conduct]: https://codeberg.org/henrycatalinismith/11tyshim/src/branch/main/code_of_conduct.md
+[MIT]: https://codeberg.org/henrycatalinismith/11tyshim/src/branch/main/license
